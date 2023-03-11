@@ -1,0 +1,402 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #ffffff;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3 {
+  color: #ffffff;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #000000, #000000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.circle1 {
+  top: 5%;
+  right: 15%;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+}
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  );
+  border-radius: 2rem;
+}
+.link {
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+.link h2 {
+  padding: 0rem 2rem;
+}
+
+.games {
+  flex: 2;
+}
+
+.pro {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  border-radius: 2rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.pro img {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+}
+.pro h2 {
+  width: 40%;
+  color: white;
+  font-weight: 600;
+}
+
+/* GAMES */
+.status {
+  margin-bottom: 3rem;
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.0),
+    rgba(0, 0, 0, 0.0)
+  );
+  border: none;
+  width: 50%;
+  padding: 0.5rem;
+  border-radius: 2rem;
+}
+
+.games {
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)
+  );
+  border-radius: 1rem;
+  margin: 2rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.212);
+  justify-content: space-between;
+}
+
+.progress {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  width: 100%;
+  height: 25%;
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+.progress::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgb(236, 236, 236);
+  position: absolute;
+  left: 70%;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.percentage {
+  font-weight: bold;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;    
+}
+
+body{
+    height: 100vh;
+    background: #161616;
+}
+
+/* Animação de texto */
+.text{
+    z-index: 1;
+    color: #fff;
+    font-family: "Montserrat", monospace;
+    font-size: 100px;
+    font-weight: 200;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(255, 255, 255, 0.2));
+}
+.text span:nth-child(1){
+    color: #4285F4;
+    animation: animText 1s ease-in-out infinite;
+}
+.text span:nth-child(2){
+    color: #EA4335;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 0.8s;
+}
+.text span:nth-child(3){
+    color: #FBBC05;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.2s;
+}
+.text span:nth-child(4){
+    color: #34A853;
+    animation: animText 1s ease-in-out infinite;
+    animation-delay: 1.6s;
+}
+
+@keyframes animText{
+    0%{
+        font-weight: 200; 
+    }
+    50%{
+        font-weight: 900;
+    }
+    100%{
+        font-weight: 200;
+    }
+}
+
+.text span:nth-child(5){
+    color: #ff7300;
+    font-weight: 900;
+    animation: animMark 1s ease-in-out infinite;
+}
+
+@keyframes animMark{
+    0%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+
+/* CSS da animação do background*/
+
+.stars-01{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #FFEB3B,
+                550px 400px #FF9800, 550px 300px #00BCD4, 350px 500px #FF9800, 1750px 150px #00BCD4,
+                1000px 50px #FFEB3B, 650px 450px #FF9800, 1200px 50px #00BCD4,1100px 450px #FFEB3B,
+                950px 100px #FF9800, 1100px 500px #00BCD4, 850px 400px #FF9800, 850px 300px #00BCD4,
+                1200px 600px #FFEB3B, 900px 300px #FF9800, 1150px 400px #00BCD4,1650px 900px #FFEB3B,
+                650px 450px #FF9800, 350px 600px #00BCD4, 600px 650px #FF9800, 150px 750px #00BCD4,
+                1750px 800px #FFEB3B, 250px 800px #FF9800, 1800px 1150px #00BCD4,450px 1450px #FFEB3B,
+                1150px 700px #FF9800, 250px 700px #00BCD4, 350px 650px #FF9800, 250px 600px #00BCD4,
+                1850px 1400px #FFEB3B, 100px 800px #FF9800, 450px 1050px #00BCD4,1550px 500px #FFEB3B,
+                150px 1350px #FF9800, 1650px 600px #00BCD4, 1250px 1950px #FF9800, 100px 1700px #00BCD4,
+                1150px 1650px #FFEB3B, 800px 800px #FF9800, 1750px 500px #00BCD4,300px 1100px #FFEB3B,
+                350px 1600px #FF9800, 1700px 50px #00BCD4, 450px 800px #FF9800,2000px 500px #00BCD4,
+                1600px 1700px #FFEB3B, 1700px 1200px #FF9800, 1100px 1750px #00BCD4,150px 950px #FFEB3B,
+                1100px 700px #FF9800, 1350px 1350px #00BCD4, 650px 1050px #FF9800,2000px 1650px#00BCD4,
+                20px 1350px #FFEB3B, 400px 1000px #FF9800, 450px 1900px #00BCD4,1500px 600px #FFEB3B,
+                100px 1400px #FF9800, 1350px 600px #00BCD4, 1100px 1650px #FF9800, 50px 700px #00BCD4,
+                1750px 20px #FFEB3B, 850px 1800px #FF9800, 650px 600px #00BCD4,1200px 850px #FFEB3B,
+                1800px 600px #FF9800, 350px 1700px #00BCD4, 450px 1650px #FF9800, 1500px 700px #00BCD4,
+                900px 550px #FFEB3B, 150px 800px #FF9800, 1200px 600px #00BCD4,1100px 1350px #FFEB3B,
+                750px 1050px #FF9800, 350px 800px #00BCD4, 700px 1100px #FF9800,1650px 1350px #173A3F,
+                1450px 1600px #CDDC39, 150px 1400px #FFF, 1200px 1450px #03A9F4, 1800px 1050px #FFF,
+                1250px 1300px #CDDC39, 1000px 1000px #4CAF50, 100px 1250px #9C27B0, 700px 1750px #00BCD4,
+                1950px 250px #FFF, 1550px 700px #F44336;  
+
+
+    animation: starsUp 10s linear infinite;
+}
+
+.stars-02{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #FFEB3B,
+                550px 400px #FF9800, 550px 300px #00BCD4, 350px 500px #FF9800, 1750px 150px #00BCD4,
+                1000px 50px #FFEB3B, 650px 450px #FF9800, 1200px 50px #00BCD4,1100px 450px #FFEB3B,
+                950px 100px #FF9800, 1100px 500px #00BCD4, 850px 400px #FF9800, 850px 300px #00BCD4,
+                1200px 600px #FFEB3B, 900px 300px #FF9800, 1150px 400px #00BCD4,1650px 900px #FFEB3B,
+                650px 450px #FF9800, 350px 600px #00BCD4, 600px 650px #FF9800, 150px 750px #00BCD4,
+                1750px 800px #FFEB3B, 250px 800px #FF9800, 1800px 1150px #00BCD4,450px 1450px #FFEB3B,
+                1150px 700px #FF9800, 250px 700px #00BCD4, 350px 650px #FF9800, 250px 600px #00BCD4,
+                1850px 1400px #FFEB3B, 100px 800px #FF9800, 450px 1050px #00BCD4,1550px 500px #FFEB3B,
+                150px 1350px #FF9800, 1650px 600px #00BCD4, 1250px 1950px #FF9800, 100px 1700px #00BCD4,
+                1150px 1650px #FFEB3B, 800px 800px #FF9800, 1750px 500px #00BCD4,300px 1100px #FFEB3B,
+                350px 1600px #FF9800, 1700px 50px #00BCD4, 450px 800px #FF9800,2000px 500px #00BCD4,
+                1600px 1700px #FFEB3B, 1700px 1200px #FF9800, 1100px 1750px #00BCD4,150px 950px #FFEB3B,
+                1100px 700px #FF9800, 1350px 1350px #00BCD4, 650px 1050px #FF9800,2000px 1650px#00BCD4,
+                20px 1350px #FFEB3B, 400px 1000px #FF9800, 450px 1900px #00BCD4,1500px 600px #FFEB3B,
+                100px 1400px #FF9800, 1350px 600px #00BCD4, 1100px 1650px #FF9800, 50px 700px #00BCD4,
+                1750px 20px #FFEB3B, 850px 1800px #FF9800, 650px 600px #00BCD4,1200px 850px #FFEB3B,
+                1800px 600px #FF9800, 350px 1700px #00BCD4, 450px 1650px #FF9800, 1500px 700px #00BCD4,
+                900px 550px #FFEB3B, 150px 800px #FF9800, 1200px 600px #00BCD4,1100px 1350px #FFEB3B,
+                750px 1050px #FF9800, 350px 800px #00BCD4, 700px 1100px #FF9800,1650px 1350px #173A3F,
+                1450px 1600px #CDDC39, 150px 1400px #FFF, 1200px 1450px #03A9F4, 1800px 1050px #FFF,
+                1250px 1300px #CDDC39, 1000px 1000px #4CAF50, 100px 1250px #9C27B0, 700px 1750px #00BCD4,
+                1950px 250px #FFF, 1550px 700px #F44336;
+
+    animation: starsUp 30s linear infinite;
+}
+
+.stars-03{
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #FFEB3B,
+                550px 400px #FF9800, 550px 300px #00BCD4, 350px 500px #FF9800, 1750px 150px #00BCD4,
+                1000px 50px #FFEB3B, 650px 450px #FF9800, 1200px 50px #00BCD4,1100px 450px #FFEB3B,
+                950px 100px #FF9800, 1100px 500px #00BCD4, 850px 400px #FF9800, 850px 300px #00BCD4,
+                1200px 600px #FFEB3B, 900px 300px #FF9800, 1150px 400px #00BCD4,1650px 900px #FFEB3B,
+                650px 450px #FF9800, 350px 600px #00BCD4, 600px 650px #FF9800, 150px 750px #00BCD4,
+                1750px 800px #FFEB3B, 250px 800px #FF9800, 1800px 1150px #00BCD4,450px 1450px #FFEB3B,
+                1150px 700px #FF9800, 250px 700px #00BCD4, 350px 650px #FF9800, 250px 600px #00BCD4,
+                1850px 1400px #FFEB3B, 100px 800px #FF9800, 450px 1050px #00BCD4,1550px 500px #FFEB3B,
+                150px 1350px #FF9800, 1650px 600px #00BCD4, 1250px 1950px #FF9800, 100px 1700px #00BCD4,
+                1150px 1650px #FFEB3B, 800px 800px #FF9800, 1750px 500px #00BCD4,300px 1100px #FFEB3B,
+                350px 1600px #FF9800, 1700px 50px #00BCD4, 450px 800px #FF9800,2000px 500px #00BCD4,
+                1600px 1700px #FFEB3B, 1700px 1200px #FF9800, 1100px 1750px #00BCD4,150px 950px #FFEB3B,
+                1100px 700px #FF9800, 1350px 1350px #00BCD4, 650px 1050px #FF9800,2000px 1650px#00BCD4,
+                20px 1350px #FFEB3B, 400px 1000px #FF9800, 450px 1900px #00BCD4,1500px 600px #FFEB3B,
+                100px 1400px #FF9800, 1350px 600px #00BCD4, 1100px 1650px #FF9800, 50px 700px #00BCD4,
+                1750px 20px #FFEB3B, 850px 1800px #FF9800, 650px 600px #00BCD4,1200px 850px #FFEB3B,
+                1800px 600px #FF9800, 350px 1700px #00BCD4, 450px 1650px #FF9800, 1500px 700px #00BCD4,
+                900px 550px #FFEB3B, 150px 800px #FF9800, 1200px 600px #00BCD4,1100px 1350px #FFEB3B,
+                750px 1050px #FF9800, 350px 800px #00BCD4, 700px 1100px #FF9800,1650px 1350px #173A3F,
+                1450px 1600px #CDDC39, 150px 1400px #FFF, 1200px 1450px #03A9F4, 1800px 1050px #FFF,
+                1250px 1300px #CDDC39, 1000px 1000px #4CAF50, 100px 1250px #9C27B0, 700px 1750px #00BCD4,
+                1950px 250px #FFF, 1550px 700px #F44336;
+
+    animation: starsUp 50s linear infinite;
+}
+
+.stars-04{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    box-shadow: 100px 200px #FFEB3B, 200px 250px #FF9800, 200px 500px #00BCD4, 300px 300px #FFEB3B,
+                550px 400px #FF9800, 550px 300px #00BCD4, 350px 500px #FF9800, 1750px 150px #00BCD4,
+                1000px 50px #FFEB3B, 650px 450px #FF9800, 1200px 50px #00BCD4,1100px 450px #FFEB3B,
+                950px 100px #FF9800, 1100px 500px #00BCD4, 850px 400px #FF9800, 850px 300px #00BCD4,
+                1200px 600px #FFEB3B, 900px 300px #FF9800, 1150px 400px #00BCD4,1650px 900px #FFEB3B,
+                650px 450px #FF9800, 350px 600px #00BCD4, 600px 650px #FF9800, 150px 750px #00BCD4,
+                1750px 800px #FFEB3B, 250px 800px #FF9800, 1800px 1150px #00BCD4,450px 1450px #FFEB3B,
+                1150px 700px #FF9800, 250px 700px #00BCD4, 350px 650px #FF9800, 250px 600px #00BCD4,
+                1850px 1400px #FFEB3B, 100px 800px #FF9800, 450px 1050px #00BCD4,1550px 500px #FFEB3B,
+                150px 1350px #FF9800, 1650px 600px #00BCD4, 1250px 1950px #FF9800, 100px 1700px #00BCD4,
+                1150px 1650px #FFEB3B, 800px 800px #FF9800, 1750px 500px #00BCD4,300px 1100px #FFEB3B,
+                350px 1600px #FF9800, 1700px 50px #00BCD4, 450px 800px #FF9800,2000px 500px #00BCD4,
+                1600px 1700px #FFEB3B, 1700px 1200px #FF9800, 1100px 1750px #00BCD4,150px 950px #FFEB3B,
+                1100px 700px #FF9800, 1350px 1350px #00BCD4, 650px 1050px #FF9800,2000px 1650px#00BCD4,
+                20px 1350px #FFEB3B, 400px 1000px #FF9800, 450px 1900px #00BCD4,1500px 600px #FFEB3B,
+                100px 1400px #FF9800, 1350px 600px #00BCD4, 1100px 1650px #FF9800, 50px 700px #00BCD4,
+                1750px 20px #FFEB3B, 850px 1800px #FF9800, 650px 600px #00BCD4,1200px 850px #FFEB3B,
+                1800px 600px #FF9800, 350px 1700px #00BCD4, 450px 1650px #FF9800, 1500px 700px #00BCD4,
+                900px 550px #FFEB3B, 150px 800px #FF9800, 1200px 600px #00BCD4,1100px 1350px #FFEB3B,
+                750px 1050px #FF9800, 350px 800px #00BCD4, 700px 1100px #FF9800,1650px 1350px #173A3F,
+                1450px 1600px #CDDC39, 150px 1400px #FFF, 1200px 1450px #03A9F4, 1800px 1050px #FFF,
+                1250px 1300px #CDDC39, 1000px 1000px #4CAF50, 100px 1250px #9C27B0, 700px 1750px #00BCD4,
+                1950px 250px #FFF, 1550px 700px #F44336;
+
+    animation: starsUp 100s linear infinite;
+}
+
+
+
+@keyframes starsUp{
+    0%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(-2000px);
+    }
+}
+
